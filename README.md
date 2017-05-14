@@ -1,6 +1,6 @@
 # Designing a 2D Side-Scrolling Multiplayer Browser Game
 
-This document is a collection of my progress as I figure out how to design a browser game (along the lines of agar.io or mope.io).
+This document is a collection of my progress as I figure out how to design a browser game (along the lines of agar.io or mope.io). The key difference from the major .io games out there is the side-scrolling approach rather than a top-down game. This introduces greater complexity due to the extra physics involved in having a vertical y axis.
 
 My background is largely backend development (and very little game engine development), so it's going to be a considerable amount of trial-and-error as I figure out what works best.
 
