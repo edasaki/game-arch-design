@@ -2,7 +2,7 @@
 
 This document is a collection of my progress as I figure out how to design a browser game (along the lines of agar.io or mope.io). The key difference from the major .io games out there is the side-scrolling approach rather than a top-down game. This introduces greater complexity due to the extra physics involved in having a vertical y axis.
 
-My background is largely backend development (and very little game engine development), so it's going to be a considerable amount of trial-and-error as I figure out what works best.
+My background is largely backend development (with a reasonable amount of game development), and it's going to be a considerable amount of trial-and-error as I figure out what works best.
 
 ## The Core Parts
 
@@ -16,6 +16,7 @@ These can be broken down as follows:
 ##### Frontend
 - Log player inputs and send to server
 - Read server response and render accordingly
+- Make a pretty UI
 
 That's about it as far as frontend, but "render accordingly" is a deceptively simple term for something that's fairly complex - maybe not so much in terms of difficulty as in terms of sheer monotony, since depending on your implementation you'll have to write up code for rendering all the different entities in your game, which can be a real pain if you're using raw canvas drawings instead of sprites.
 
@@ -25,6 +26,7 @@ That's about it as far as frontend, but "render accordingly" is a deceptively si
 - Apply player inputs to entities
 - Partition game world into views to display to individual clients
 - Apply physics as necessary (collisions and forces)
+- General Game Design & Structure
 
 This is considerably more involved. The physics portion may be the trickiest, since to avoid excess overhead in the interest of speed, it's probably best to implement your own mini physics engine rather than using the more heavy-duty options available. 
 
